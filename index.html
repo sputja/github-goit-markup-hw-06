@@ -386,7 +386,47 @@
 		</div>
 
 	</footer>
+ <!--  модальное окно  -->
+ <div class="form--send ">
 
+  <form class="user--form" action="#">
+    <div class="form--send-colse">
+      <svg class="form--send-svg" width="18" height="18" >
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </div>
+
+    <h2 class="user--form-h2">Оставьте свои данные, мы вам перезвоним</h2>
+    <div class="user--form-name">
+      <input type="text" name="user--name" class="user--form-inptu" required>
+      <svg class="user--name-svg" width="12" height="12" >
+        <use href="./img/sprite.svg#fname"></use>
+      </svg>
+      <label class="user--name-label">Имя</label>
+    </div>
+    <div class="user--form-tel">
+      <input type="tel" name="user--tel" class="user--form-inptu" required>
+      <svg class="user--tel-svg" width="13" height="13" >
+        <use href="./img/sprite.svg#ftel"></use>
+      </svg>
+      <label class="user--tel-label">Телефон</label>
+    </div>
+    <div class="user--form-email">
+      <input type="email" name="user--email" class="user--form-inptu" class="user--form-inptu" required>
+      <svg class="user--email-svg" width="13" height="13" >
+        <use href="./img/sprite.svg#femail"></use>
+      </svg>
+      <label class="user--email-label">Почта</label>
+    </div>
+    <textarea name="text" id="" class="user--form-textarea" placeholder="Комментарий"></textarea>
+    <label class="user--form-label">
+      <input type="checkbox" name="polisy" value="accept-polisy">
+      <span class="user--form-label--checkbox"></span>
+      <span class="user--form-label--span">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
+    </label>
+    <button type="submit" class="user--form-btn">Отправить</button>
+  </form>
+</div>
 </body>
 
 </html>
