@@ -356,45 +356,37 @@
 								<use href="./img/sprite.svg#linkedIn"></use>
 							</svg>
 						</a>
-
 					</li>
 				</ul>
 			</li>
 			<li class="coordinates--item2">
-				<b class="coordinates--text">Подпишитесь на рассылку</b>
-				<ul class="coordinates--subscription">
-					<li>
-						<input class="coordinates--email" type="email"  placeholder="E-mail" name="email" />
-					</li>
-					<li>
-						<button class="coordinates--buttom" type="submit"> Подписаться
-							<svg class="coordinates--buttom-svg">
-								<use  href="./img/sprite.svg#send"></use>
-							</svg>
-						</button>
-					</li>
-				</ul>
-
-
-
-			</li>
+        <form action="#" >
+          <b class="coordinates--text">Подпишитесь на рассылку</b>
+          <ul class="coordinates--subscription">
+            <li>
+              <input class="coordinates--email" type="email"  placeholder="E-mail" name="email" />
+            </li>
+            <li>
+              <button class="coordinates--buttom" type="submit"> Подписаться
+                <svg class="coordinates--buttom-svg">
+                  <use  href="./img/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </form>
+      </li>
 		</ul>
 		</div>
-
 	</footer>
 <!--  модальное окно  -->
-<div data-modal class="form--send is-hidden">
+<div data-modal class="form--send is-hidden animation">
   <form class="user--form" action="#">
     <button data-modal-close type="button" class="btn--modal-close animation">
       <svg class="form--send-svg animation" width="11" height="11" >
         <use href="./img/sprite.svg#close"></use>
       </svg>
       </button>
-    <!-- <div data-modal-close class="form--send-colse">
-      <svg class="form--send-svg" width="11" height="11" >
-        <use href="./img/sprite.svg#close"></use>
-      </svg>
-    </div> -->
     <h2 class="user--form-h2">Оставьте свои данные, мы вам перезвоним</h2>
     <div class="user--form-name">
       <input type="text" name="user--name" class="user--form-inptu animation" required>
@@ -419,8 +411,8 @@
     </div>
     <textarea name="text" id="" class="user--form-textarea animation" placeholder="Комментарий"></textarea>
     <label class="user--form-label animation">
-      <input type="checkbox" name="polisy" value="accept-polisy" class="user--form-hidden animation">
-      <span class="user--form-label--checkbox animation"></span>
+      <input type="checkbox" name="polisy" value="accept-polisy" class="user--form-hidden  user--checkbox animation">
+      <span class="user--form-label--checkbox"></span>
       <svg class="user--form-label--svg animation" width="11" height="8" >
         <use href="./img/sprite.svg#checkgal"></use>
       </svg>
