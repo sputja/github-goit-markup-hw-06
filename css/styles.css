@@ -9,7 +9,7 @@
   --text--dark-color: #757575;
   --text--light-color: #ffffff;
   --accent--color: #2196f3;
-  --accent--color-rgba: rgba(33, 150, 243, 0.9)
+  --accent--color-rgba: rgba(33, 150, 243, 0.9);
 }
 
 html {
@@ -665,9 +665,8 @@ input {
   --color3: #ffffff;
 }
 
-
 /* модальное окно */
-.form--send{
+.form--send {
   position: fixed;
   top: 0;
   left: 0;
@@ -678,19 +677,27 @@ input {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
-  /* transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-
 }
 
-.is-hidden{
+.user--form
+{
+  position: relative;
+  width: 528px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: scale(0.5);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn--modal-close{
+.btn--modal-close {
   display: inline-block;
   text-align: center;
   width: 30px;
@@ -700,30 +707,17 @@ input {
   margin-right: 8px;
 
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .btn--modal-close:hover,
-.btn--modal-close:focus
-{
+.btn--modal-close:focus {
   color: var(--accent--color);
-  fill: var(--accent--color)
+  fill: var(--accent--color);
 }
 
-.user--form{
-  position: relative;
-  width: 528px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-
-
-.user--form-h2{
+.user--form-h2 {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -736,13 +730,12 @@ input {
 
 .user--form-name,
 .user--form-tel,
-.user--form-email
-{
+.user--form-email {
   position: relative;
   margin-bottom: 28px;
 }
 
-.user--form-inptu{
+.user--form-inptu {
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -750,13 +743,13 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  -webkit-text-fill-color:  var(--title--dark-color);
+  -webkit-text-fill-color: var(--title--dark-color);
   color: var(--title--dark-color);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .user--form-inptu:hover,
-.user--form-inptu:focus{
+.user--form-inptu:focus {
   border: 1px solid var(--accent--color);
   fill: var(--accent--color);
 }
@@ -766,28 +759,29 @@ input {
 .user--form-inptu:hover + .user--tel-svg,
 .user--form-inptu:focus + .user--tel-svg,
 .user--form-inptu:hover + .user--email-svg,
-.user--form-inptu:focus + .user--email-svg{
+.user--form-inptu:focus + .user--email-svg {
   fill: var(--accent--color);
 }
 
-.user--form-inptu:hover + .user--name-svg +
-.user--name-label,
-.user--form-inptu:focus + .user--name-svg +
-.user--name-label,
-.user--form-inptu:hover + .user--tel-svg +
-.user--tel-label,
-.user--form-inptu:focus + .user--tel-svg +
-.user--tel-label,
-.user--form-inptu:hover + .user--email-svg +
-.user--email-label,
-.user--form-inptu:focus + .user--email-svg +
-.user--email-label{
+.user--form-inptu:hover + .user--name-svg + .user--name-label,
+.user--form-inptu:focus + .user--name-svg + .user--name-label,
+.user--form-inptu:hover + .user--tel-svg + .user--tel-label,
+.user--form-inptu:focus + .user--tel-svg + .user--tel-label,
+.user--form-inptu:hover + .user--email-svg + .user--email-label,
+.user--form-inptu:focus + .user--email-svg + .user--email-label,
+.user--form-inptu:not(:placeholder-shown) + .user--name-svg + .user--name-label,
+.user--form-inptu:not(:placeholder-shown) + .user--name-svg + .user--name-label,
+.user--form-inptu:not(:placeholder-shown) + .user--tel-svg + .user--tel-label,
+.user--form-inptu:not(:placeholder-shown) + .user--tel-svg + .user--tel-label,
+.user--form-inptu:not(:placeholder-shown) + .user--email-svg + .user--email-label,
+.user--form-inptu:not(:placeholder-shown) + .user--email-svg + .user--email-label
+{
   margin-top: -33px;
   margin-left: 0;
-  color: var(--accent--color)
+  color: var(--accent--color);
 }
 
-.user--name-svg{
+.user--name-svg {
   position: absolute;
   top: 14px;
   left: 59px;
@@ -795,14 +789,13 @@ input {
 }
 
 .user--tel-svg,
-.user--email-svg
-{
+.user--email-svg {
   position: absolute;
   top: 11px;
   left: 56px;
 }
 
-.user--name-label{
+.user--name-label {
   position: absolute;
   top: 14px;
   left: 59px;
@@ -810,7 +803,7 @@ input {
 }
 
 .user--tel-label,
-.user--email-label{
+.user--email-label {
   position: absolute;
   top: 11px;
   left: 56px;
